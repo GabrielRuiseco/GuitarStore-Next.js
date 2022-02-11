@@ -18,7 +18,7 @@ export default function Blog({ inputs }) {
 }
 
 export async function getStaticProps() {
-  const url = 'http://localhost:1337/blogs';
+  const url = `${process.env.API_URL}/blogs?_sort=created_at:desc`;
   const response = await fetch(url);
   const inputs = await response.json();
   return {

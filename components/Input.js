@@ -4,7 +4,7 @@ import { formateDate } from '../helpers';
 import styles from '../styles/Input.module.css';
 
 const Input = ({ input }) => {
-  const { id, title, resume, content, image, published_at } = input;
+  const { id, title, resume, content, image, published_at, url } = input;
 
   return (
     <article>
@@ -20,7 +20,7 @@ const Input = ({ input }) => {
         <h3>{title}</h3>
         <p className={styles.date}>{formateDate(published_at)}</p>
         <p className={styles.resume}>{resume}</p>
-        <Link href={`/blog/${id}`}>Leer entrada</Link>
+        <Link href={`/blog/${url}`}>Leer entrada</Link>
       </div>
     </article>
   );
