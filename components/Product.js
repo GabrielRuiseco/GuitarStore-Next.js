@@ -10,8 +10,8 @@ const Product = ({ guitar }) => {
         priority='true'
         src={image[0].url}
         layout='responsive'
-        width={150}
-        height={350}
+        width={133}
+        height={310}
         alt={`guitarra ${name}`}
       />
       <div className={styles.content}>
