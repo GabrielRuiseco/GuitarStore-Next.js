@@ -9,6 +9,7 @@
 
 .content {
   padding: 2rem;
+  border: 1px solid whitesmoke;
 }
 
 .content h3 {
@@ -47,4 +48,8 @@
 .content a:hover {
   background-color: var(--primary);
   color: var(--blanco);
+}
+
+.paragraph{
+  margin: 0;
 }

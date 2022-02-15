@@ -20,6 +20,7 @@ const Header = ({ guitar }) => {
             <Link href='/us'>Nosotros</Link>
             <Link href='/blog'>Blog</Link>
             <Link href='/store'>Tienda</Link>
+            <Link href='/courses'>Cursos</Link>
           </nav>
         </div>
         {guitar && (
